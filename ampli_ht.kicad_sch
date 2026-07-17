@@ -10,7 +10,7 @@
 		(rev "1")
 	)
 	(lib_symbols
-		(symbol "ELDSGN Parts:Resistors/00007 0603WAF6201T5E"
+		(symbol "ELDSGN Parts:00007 0603WAF6201T5E"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -157,39 +157,6 @@
 					)
 				)
 			)
-			(property "exclude_from_board" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "exclude_from_bom" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "exclude_from_sim" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "ki_fp_filters" "connectors:C4260 C4260"
 				(at 0 0 0)
 				(show_name no)
@@ -201,7 +168,7 @@
 					)
 				)
 			)
-			(symbol "Resistors/00007 0603WAF6201T5E_0_1"
+			(symbol "00007 0603WAF6201T5E_0_1"
 				(rectangle
 					(start -2.54 1.02)
 					(end 2.54 -1.02)
@@ -252,7 +219,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ELDSGN Parts:Resistors/00011 RC0402FR-07910RL2"
+		(symbol "ELDSGN Parts:00011 RC0402FR-07910RL2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -399,39 +366,6 @@
 					)
 				)
 			)
-			(property "exclude_from_board" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "exclude_from_bom" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "exclude_from_sim" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "ki_fp_filters" "connectors:C276279 C276279"
 				(at 0 0 0)
 				(show_name no)
@@ -443,7 +377,7 @@
 					)
 				)
 			)
-			(symbol "Resistors/00011 RC0402FR-07910RL2_0_1"
+			(symbol "00011 RC0402FR-07910RL2_0_1"
 				(rectangle
 					(start -2.54 1.02)
 					(end 2.54 -1.02)
@@ -2335,6 +2269,12 @@
 		(uuid "dde8619c-5a8c-40eb-9845-65e6a654222d")
 	)
 	(junction
+		(at 74.93 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e32b5183-6279-4ee3-b931-ba6ad9c5a790")
+	)
+	(junction
 		(at 185.42 83.82)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -2378,6 +2318,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 118.11) (xy 74.93 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "036b8483-0f41-44f2-a503-f27ee4eff709")
+	)
+	(wire
+		(pts
 			(xy 218.44 127) (xy 218.44 134.62)
 		)
 		(stroke
@@ -2385,6 +2335,16 @@
 			(type solid)
 		)
 		(uuid "08f19fb5-3fbe-461c-a997-f686f09698b0")
+	)
+	(wire
+		(pts
+			(xy 66.04 96.52) (xy 74.93 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbabb6d-1da5-4926-b82a-aa47666d7e53")
 	)
 	(wire
 		(pts
@@ -2518,7 +2478,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 96.52) (xy 53.34 96.52)
+			(xy 54.61 101.6) (xy 53.34 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2548,7 +2508,17 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 50.8) (xy 53.34 96.52)
+			(xy 74.93 96.52) (xy 82.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38939bc1-ee60-4be2-9a23-cd95ec178fa4")
+	)
+	(wire
+		(pts
+			(xy 53.34 50.8) (xy 53.34 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2748,7 +2718,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 96.52) (xy 82.55 96.52)
+			(xy 64.77 101.6) (xy 66.04 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2795,6 +2765,16 @@
 			(type solid)
 		)
 		(uuid "74000c78-d422-4b5e-969e-efc79d929941")
+	)
+	(wire
+		(pts
+			(xy 74.93 118.11) (xy 74.93 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd72b85-f30e-4059-aa59-517196b9d3e3")
 	)
 	(wire
 		(pts
@@ -3165,6 +3145,16 @@
 			(type solid)
 		)
 		(uuid "f195c12d-8018-4868-a895-e803cfb37004")
+	)
+	(wire
+		(pts
+			(xy 66.04 101.6) (xy 66.04 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2fb78a0-7fa8-4648-904d-9cbe30944827")
 	)
 	(wire
 		(pts
@@ -7090,8 +7080,8 @@
 		)
 	)
 	(symbol
-		(lib_id "ELDSGN Parts:Resistors/00007 0603WAF6201T5E")
-		(at 60.96 96.52 0)
+		(lib_id "ELDSGN Parts:00007 0603WAF6201T5E")
+		(at 99.06 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7100,9 +7090,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cdf40211-13e8-45e4-97e7-5fe5608bd0da")
-		(property "Reference" "R1"
-			(at 60.96 90.17 0)
+		(uuid "98505c6a-2e18-4533-9b57-d19e4475a0fc")
+		(property "Reference" "R5"
+			(at 99.06 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7112,7 +7102,7 @@
 			)
 		)
 		(property "Value" "0603WAF6201T5E"
-			(at 60.96 92.71 0)
+			(at 99.06 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7122,7 +7112,7 @@
 			)
 		)
 		(property "Footprint" "connectors:C4260"
-			(at 60.96 104.14 0)
+			(at 99.06 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7133,7 +7123,7 @@
 			)
 		)
 		(property "Datasheet" "C21190.pdf"
-			(at 60.96 106.68 0)
+			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7144,7 +7134,7 @@
 			)
 		)
 		(property "Description" "Resistors"
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7155,7 +7145,7 @@
 			)
 		)
 		(property "LCSC Part" "C4260"
-			(at 60.96 109.22 0)
+			(at 99.06 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7166,7 +7156,7 @@
 			)
 		)
 		(property "MPN" "0603WAF6201T5E"
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7177,7 +7167,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7188,7 +7178,7 @@
 			)
 		)
 		(property "ELDSGN_id" "7"
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7199,7 +7189,7 @@
 			)
 		)
 		(property "ELDSGN_Category" ""
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7210,7 +7200,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7221,7 +7211,7 @@
 			)
 		)
 		(property "Power" ""
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7232,7 +7222,7 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 60.96 96.52 0)
+			(at 99.06 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7242,8 +7232,59 @@
 				)
 			)
 		)
-		(property "exclude_from_board" ""
-			(at 60.96 96.52 0)
+		(pin "2"
+			(uuid "bedeca06-029c-4fbf-8c29-7e92f3f0d8aa")
+		)
+		(pin "1"
+			(uuid "d0a741b8-909e-4dd4-b932-d54d83a0854a")
+		)
+		(instances
+			(project "complex_hierarchy"
+				(path "/5b9623a5-6d01-41fc-9865-e1bc779418c8/00000000-0000-0000-0000-00004b3a1333"
+					(reference "R5")
+					(unit 1)
+				)
+				(path "/5b9623a5-6d01-41fc-9865-e1bc779418c8/00000000-0000-0000-0000-00004b3a13a4"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ELDSGN Parts:00007 0603WAF6201T5E")
+		(at 59.69 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdf40211-13e8-45e4-97e7-5fe5608bd0da")
+		(property "Reference" "R1"
+			(at 59.69 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0603WAF6201T5E"
+			(at 59.69 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "connectors:C4260"
+			(at 59.69 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7253,8 +7294,8 @@
 				)
 			)
 		)
-		(property "exclude_from_bom" ""
-			(at 60.96 96.52 0)
+		(property "Datasheet" "C21190.pdf"
+			(at 59.69 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7264,8 +7305,96 @@
 				)
 			)
 		)
-		(property "exclude_from_sim" ""
-			(at 60.96 96.52 0)
+		(property "Description" "Resistors"
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C4260"
+			(at 59.69 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0603WAF6201T5E"
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ELDSGN_id" "7"
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ELDSGN_Category" ""
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" ""
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power" ""
+			(at 59.69 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Resistance" ""
+			(at 59.69 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7295,7 +7424,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ELDSGN Parts:Resistors/00011 RC0402FR-07910RL2")
+		(lib_id "ELDSGN Parts:00011 RC0402FR-07910RL2")
 		(at 87.63 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -7437,39 +7566,6 @@
 			)
 		)
 		(property "Resistance" ""
-			(at 87.63 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "exclude_from_board" ""
-			(at 87.63 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 87.63 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "exclude_from_sim" ""
 			(at 87.63 96.52 0)
 			(hide yes)
 			(show_name no)
