@@ -7491,10 +7491,6 @@
 				(path "/5b9623a5-6d01-41fc-9865-e1bc779418c8/00000000-0000-0000-0000-00004b3a1333"
 					(reference "R3")
 					(unit 1)
-					(variant
-						(name "Popu test")
-						(dnp yes)
-					)
 				)
 				(path "/5b9623a5-6d01-41fc-9865-e1bc779418c8/00000000-0000-0000-0000-00004b3a13a4"
 					(reference "R4")
