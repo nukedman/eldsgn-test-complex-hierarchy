@@ -715,7 +715,11 @@
       }
     ],
     "used_designators": "R1-4",
-    "variants": []
+    "variants": [
+      {
+        "name": "bez kukulki"
+      }
+    ]
   },
   "sheets": [
     [
