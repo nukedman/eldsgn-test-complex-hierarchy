@@ -1,0 +1,219 @@
+{
+    "jobs": [
+        {
+            "id": "c288bc75-0e92-96ac-ba11-9653e0c73902",
+            "type": "pcb_export_gerbers",
+            "description": "Gerbers (board plot params)",
+            "settings": {
+                "output_filename": "gerbers/",
+                "use_board_plot_params": true,
+                "create_gerber_job_file": true
+            }
+        },
+        {
+            "id": "375a7708-9cd6-af5c-5c47-094cc498c107",
+            "type": "pcb_export_drill",
+            "description": "Drill files",
+            "settings": {
+                "output_dir": "gerbers/"
+            }
+        },
+        {
+            "id": "1cb4b9fc-3ab4-5f63-5847-178881a390cd",
+            "type": "sch_export_bom",
+            "description": "BOM (Full)",
+            "settings": {
+                "output_filename": "bom/complex-hierarchy-demo-rev-b-full-bom.csv",
+                "fields_ordered": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "${QUANTITY}",
+                    "${DNP}",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "fields_labels": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "Quantity",
+                    "DNP",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "field_delimiter": ",",
+                "string_delimiter": "\"",
+                "ref_delimiter": ",",
+                "group_symbols": true,
+                "exclude_dnp": true
+            }
+        },
+        {
+            "id": "9bf333a9-8f34-502c-f4ae-b5634fe6259b",
+            "type": "pcb_export_pos",
+            "description": "Placement (Full)",
+            "settings": {
+                "output_filename": "assembly/complex-hierarchy-demo-rev-b-full.csv",
+                "format": "csv",
+                "units": "mm",
+                "side": "both",
+                "single_file": true,
+                "exclude_dnp": true
+            }
+        },
+        {
+            "id": "f2d78d89-4218-5a25-3785-8a4fed18054e",
+            "type": "sch_export_bom",
+            "description": "BOM (bez kukulki)",
+            "settings": {
+                "output_filename": "bom/complex-hierarchy-demo-rev-b-bez-kukulki-bom.csv",
+                "fields_ordered": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "${QUANTITY}",
+                    "${DNP}",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "fields_labels": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "Quantity",
+                    "DNP",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "field_delimiter": ",",
+                "string_delimiter": "\"",
+                "ref_delimiter": ",",
+                "group_symbols": true,
+                "exclude_dnp": true,
+                "variant_names": [
+                    "bez kukulki"
+                ]
+            }
+        },
+        {
+            "id": "04ad3e63-83f2-819a-16e9-5fbd802a2bcb",
+            "type": "pcb_export_pos",
+            "description": "Placement (bez kukulki)",
+            "settings": {
+                "output_filename": "assembly/complex-hierarchy-demo-rev-b-bez-kukulki.csv",
+                "format": "csv",
+                "units": "mm",
+                "side": "both",
+                "single_file": true,
+                "exclude_dnp": true,
+                "variant": "bez kukulki"
+            }
+        },
+        {
+            "id": "2174adef-c14d-7b47-c1aa-2dd29ce158a4",
+            "type": "sch_export_plot_pdf",
+            "description": "Schematic PDF (interactive)",
+            "settings": {
+                "output_filename": "drawings/complex-hierarchy-demo-rev-b-schematic.pdf",
+                "pdf_property_popups": true,
+                "pdf_hierarchical_links": true,
+                "pdf_metadata": true
+            }
+        },
+        {
+            "id": "5f91fb7c-6c99-6300-34e4-10a871ebf823",
+            "type": "pcb_export_pdf",
+            "description": "Assembly drawing (top)",
+            "settings": {
+                "output_filename": "drawings/complex-hierarchy-demo-rev-b-assembly-top.pdf",
+                "layers": [
+                    "F.Fab",
+                    "Edge.Cuts"
+                ],
+                "pdf_gen_mode": "all-layers-one-file"
+            }
+        },
+        {
+            "id": "e1368401-5b9a-0790-613c-9ff256d49910",
+            "type": "pcb_export_pdf",
+            "description": "Assembly drawing (bottom)",
+            "settings": {
+                "output_filename": "drawings/complex-hierarchy-demo-rev-b-assembly-bottom.pdf",
+                "layers": [
+                    "B.Fab",
+                    "Edge.Cuts"
+                ],
+                "pdf_gen_mode": "all-layers-one-file"
+            }
+        },
+        {
+            "id": "c38d8663-f548-e233-268a-c930e37c1203",
+            "type": "pcb_export_3d",
+            "description": "3D model (STEP)",
+            "settings": {
+                "output_filename": "drawings/complex-hierarchy-demo-rev-b.step",
+                "format": "step",
+                "subst_models": true,
+                "include_dnp": false
+            }
+        }
+    ],
+    "outputs": [
+        {
+            "id": "17bdfc30-f1ce-dc1d-07be-d7ab829b5dc3",
+            "type": "folder",
+            "description": "Production outputs folder",
+            "only": [],
+            "settings": {
+                "output_path": "${KIPRJMOD}/outputs/production"
+            }
+        },
+        {
+            "id": "f048279b-375c-608e-530c-2de057e1a5c4",
+            "type": "archive",
+            "description": "Fabrication package",
+            "only": [
+                "c288bc75-0e92-96ac-ba11-9653e0c73902",
+                "375a7708-9cd6-af5c-5c47-094cc498c107"
+            ],
+            "settings": {
+                "output_path": "${KIPRJMOD}/outputs/production/complex-hierarchy-demo-rev-b-gerbers.zip",
+                "format": "zip"
+            }
+        },
+        {
+            "id": "6310bb65-3100-85a6-619a-b5966ab4bb55",
+            "type": "archive",
+            "description": "Assembly package (Full)",
+            "only": [
+                "1cb4b9fc-3ab4-5f63-5847-178881a390cd",
+                "9bf333a9-8f34-502c-f4ae-b5634fe6259b"
+            ],
+            "settings": {
+                "output_path": "${KIPRJMOD}/outputs/production/complex-hierarchy-demo-rev-b-full-assembly.zip",
+                "format": "zip"
+            }
+        },
+        {
+            "id": "98b43510-acbe-23fd-d4e7-394ba3fd481b",
+            "type": "archive",
+            "description": "Assembly package (bez kukulki)",
+            "only": [
+                "f2d78d89-4218-5a25-3785-8a4fed18054e",
+                "04ad3e63-83f2-819a-16e9-5fbd802a2bcb"
+            ],
+            "settings": {
+                "output_path": "${KIPRJMOD}/outputs/production/complex-hierarchy-demo-rev-b-bez-kukulki-assembly.zip",
+                "format": "zip"
+            }
+        }
+    ],
+    "meta": {
+        "version": 1
+    }
+}
