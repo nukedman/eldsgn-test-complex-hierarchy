@@ -115,6 +115,56 @@
             }
         },
         {
+            "id": "75c4d1c8-3b6a-bcd4-f76f-4ab2f5fac585",
+            "type": "sch_export_bom",
+            "description": "BOM (another)",
+            "settings": {
+                "output_filename": "bom/complex-hierarchy-demo-rev-b-another-bom.csv",
+                "fields_ordered": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "${QUANTITY}",
+                    "${DNP}",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "fields_labels": [
+                    "Reference",
+                    "Value",
+                    "Footprint",
+                    "Quantity",
+                    "DNP",
+                    "ELDSGN_id",
+                    "MPN",
+                    "LCSC"
+                ],
+                "field_delimiter": ",",
+                "string_delimiter": "\"",
+                "ref_delimiter": ",",
+                "group_symbols": true,
+                "exclude_dnp": true,
+                "variant_names": [
+                    "another"
+                ]
+            }
+        },
+        {
+            "id": "43e1c82a-1b33-ff0e-2209-b9f0db77ed74",
+            "type": "pcb_export_pos",
+            "description": "Placement (another)",
+            "settings": {
+                "output_filename": "assembly/complex-hierarchy-demo-rev-b-another.csv",
+                "format": "csv",
+                "units": "mm",
+                "side": "both",
+                "single_file": true,
+                "exclude_dnp": true,
+                "variant": "another"
+            }
+        },
+        {
             "id": "2174adef-c14d-7b47-c1aa-2dd29ce158a4",
             "type": "sch_export_plot_pdf",
             "description": "Schematic PDF (interactive)",
@@ -209,6 +259,19 @@
             ],
             "settings": {
                 "output_path": "${KIPRJMOD}/outputs/production/complex-hierarchy-demo-rev-b-bez-kukulki-assembly.zip",
+                "format": "zip"
+            }
+        },
+        {
+            "id": "ef824bc6-099b-d6b9-de2e-026eb0bef144",
+            "type": "archive",
+            "description": "Assembly package (another)",
+            "only": [
+                "75c4d1c8-3b6a-bcd4-f76f-4ab2f5fac585",
+                "43e1c82a-1b33-ff0e-2209-b9f0db77ed74"
+            ],
+            "settings": {
+                "output_path": "${KIPRJMOD}/outputs/production/complex-hierarchy-demo-rev-b-another-assembly.zip",
                 "format": "zip"
             }
         }
