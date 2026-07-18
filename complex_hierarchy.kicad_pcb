@@ -18911,6 +18911,10 @@
 			(pintype "input")
 			(uuid "feedd89e-0229-4cc1-b085-4ec997dec09e")
 		)
+		(variant
+			(name "bez kukulki")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "/usr/share/webapps/eldsgn-lib/storage/app/temp/lcsc_cad/C4260_6a47d8e46eaae/C4260.3dshapes/R0603.wrl"
 			(offset
