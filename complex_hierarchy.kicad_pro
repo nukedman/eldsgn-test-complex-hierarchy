@@ -738,8 +738,11 @@
         "uuid": "5b9623a5-6d01-41fc-9865-e1bc779418c8"
       }
     ],
-    "used_designators": "R1-6",
+    "used_designators": "R1-8",
     "variants": [
+      {
+        "name": "another"
+      },
       {
         "name": "bez kukulki"
       }
